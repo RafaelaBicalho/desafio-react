@@ -1,0 +1,26 @@
+.accountant {
+    margin: auto;
+    width: 736px;
+    margin-top: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.accountant p:first-child {
+    color: var(--blue-300);
+}
+
+.accountant p:last-child{
+    color: var(--purple-300);
+}
+
+span {
+    width: auto;
+    background-color: var(--gray-400);
+    padding: 0.5rem;
+    border-radius: 15px;
+    color: var(--gray-100);
+}

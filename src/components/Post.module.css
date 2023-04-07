@@ -1,0 +1,83 @@
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Post { 
+    background-color: var(--gray-400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    width: 736px;
+    margin-top: 30px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.Text {
+    color: var(--gray-100);
+}
+
+.Button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-400);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 2px;
+}
+
+.Check {
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border: 2px solid var(--blue-300);
+    position: absolute;
+}
+
+.Wrapper input {
+    opacity: 0;
+}
+
+.Wrapper {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin: auto;
+    padding: 0;
+}
+
+input:Checked + .Check {
+    border: 2px solid var(--purple-500);
+    background-color: var(--purple-500);
+    display: block;
+
+}
+
+.Wrapper .Check:after { 
+    top: 2px;
+    left: 4.5px;
+    width: 4px;
+    height: 8px;
+    border: solid var(--gray-100);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.Check:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.Wrapper input:checked ~ .Check:after {
+    display: block;
+}
